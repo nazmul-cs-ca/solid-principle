@@ -1,2 +1,2 @@
-# solid_principal
-Depicting Solid principal in python.
+# solid_principle
+Depicting Solid principle in python.
