@@ -1,0 +1,38 @@
+class Person:
+    classVariable: int = 10
+
+    @staticmethod
+    def Consumed():
+        return Person.classVariable
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        self.storage = PersonDB()
+
+    def getName(self) -> str:
+        return self.name
+
+    def getAge(self) -> int:
+        return self.age
+
+    def save(self):
+        self.storage.store(self)
+
+    def __str__(self):
+        return "Person:: name: {}, age: {}".format(self.name, self.age)
+
+
+class PersonDB:
+    def __int__(self):
+        pass
+
+    def store(self, person):
+        print("Storing {}", str(person))
+
+
+if __name__ == "__main__":
+    print("hello from Single Responsibility!")
+    person = Person("nazmul alam", 35)
+    person.save()
+    print(Person.Consumed())
