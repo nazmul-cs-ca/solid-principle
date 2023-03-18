@@ -1,4 +1,4 @@
-'''The “L” in SOLID is for Liskov Substitution Principle, which states that subclases should be substitutable
+'''The “L” in SOLID is for Liskov Substitution Principle, which states that subclases(Derived) should be substitutable
  for the classes from which they were derived. For example, if MySubclass is a subclass of MyClass, you should 
  be able to replace MyClass with MySubclass without bunging up the program.'''
 
