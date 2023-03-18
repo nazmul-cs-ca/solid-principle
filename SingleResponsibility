@@ -1,3 +1,6 @@
+'''The “S” in SOLID is for Single Responsibility Principle, which states that every object should have
+ a single responsibility and that all of its services should be aligned with that responsibility. 
+ “Responsibility” is defined as “a reason to change”,'''
 class Person:
     classVariable: int = 10
 
