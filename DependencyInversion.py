@@ -1,6 +1,7 @@
 '''The “D” in SOLID is for Dependency Inversion Principle, which states that high-level modules shouldn’t
  depend on low-level modules, but both should depend on shared abstractions. In addition, abstractions should
  not depend on details – instead, details should depend on abstractions.'''
+
 class FXConverter:
     def convert(self, from_currency, to_currency, amount):
         print(f'{amount} {from_currency} = {amount * 1.2} {to_currency}')
