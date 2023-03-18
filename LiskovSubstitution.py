@@ -9,7 +9,6 @@ class Notification(ABC):
     def notify(self, message, email):
         pass
 
-
 class Email(Notification):
     def notify(self, message, email):
         print(f'Send {message} to {email}')
@@ -45,16 +44,13 @@ if __name__ == '__main__':
     notification_manager = NotificationManager(SMS(), contact)
     notification_manager.send('Hello John')
 
-
 # correct and redesigned version of the problem which does not violate the LSP
 from abc import ABC, abstractmethod
-
 
 class Notification(ABC):
     @abstractmethod
     def notify(self, message):
         pass
-
 
 class Email(Notification):
     def __init__(self, email):
