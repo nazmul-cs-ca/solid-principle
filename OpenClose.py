@@ -1,3 +1,8 @@
+'''The “O” in SOLID is for Open-Closed Principle, which states that software entities – such as classes, 
+ modules, functions and so on – should be open for extension but closed for modification. The idea is 
+ that it’s often better to make changes to things like classes by adding to or building on top of them
+ (using mechanisms like subclassing or polymorphism) rather than modifying their code.'''
+
 from abc import ABC, abstractmethod
 
 class Person:
